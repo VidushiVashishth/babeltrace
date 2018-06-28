@@ -5,7 +5,9 @@ After installing babeltrace using the available instructions, cd into this direc
 This will create a ctf trace directory in the current directory. This new directory can be accessed using the following set of commands:
 
 sudo chmod go+x rtemtrace-1
+
 cd rtemtrace-1
+
 sudo ls -alZ
 
 These commands will show the generated metadata stream and a ctf trace stream.
