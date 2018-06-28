@@ -10,12 +10,12 @@ int main(int argc, char *argv[])
     return 0;
   }
   char* te = argv[1];
-  const char* one = "sudo babeltrace run --component=A:source.text.dmesg --params='no-extract-timestamp=no' --key=path --value ~/Desktop/babeltrace_exp2/";
-  const char* two = " --component=B:sink.ctf.fs --key=path --value ~/Desktop/babeltrace_exp2";
+  const char* one = "sudo babeltrace run --component=A:source.text.dmesg --params='no-extract-timestamp=no' --key=path --value ./";
+  const char* two = " --component=B:sink.ctf.fs --key=path --value ./";
   const char* three = " --connect=A:B";
-  FILE* fp;
   char* final;
   char* output;
+  int fp;
   final = malloc(strlen(one)+strlen(two)+strlen(three)+strlen(te)+1);
   strcpy(final, one); 
   strcat(final, te);
