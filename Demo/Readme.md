@@ -12,7 +12,7 @@ sudo ls -alZ
 
 These commands will show the generated metadata stream and a ctf trace stream.
 
-The program.c file is a c program to call the above babeltrace conversion command which will take as input the path of the rtems trace file to be converted. This is currently 
+The program.c file is a c program to call the above babeltrace conversion command which will take as input the path of the rtems trace file to be converted. 
 
 rtemtrace is an instance of the rtems trace output generated when running the fileio sample testcase. I have saved it to a file.  
 
